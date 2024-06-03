@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula de Semânticas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4e3c3c;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #a19d5e;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="cardapio.css">
+
+   
 </head>
 <body>
+    
     <header>
-        <h1>Meu Site</h1>
+        <h1>Cafeteria </h1>
     </header>
+    <div class="container">
+        <h1>Cardápio da Cafeteria</h1>
+        <div class="menu-item">
+            <span class="item-name">Café Espresso</span>
+            <span class="item-price">R$ 3,50</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Café com Leite</span>
+            <span class="item-price">R$ 4,00</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Cappuccino</span>
+            <span class="item-price">R$ 5,00</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Chocolate Quente</span>
+            <span class="item-price">R$ 4,50</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Croissant</span>
+            <span class="item-price">R$ 3,00</span>
+        </div>
+        <div class="menu-item">
+            <span class="item-name">Muffin de Blueberry</span>
+            <span class="item-price">R$ 4,50</span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Fale Conosco</h1>
+        <form action="fale.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
     <main>
-        <h2>Bem-vindo ao meu site!</h2>
-        <p>Este é um exemplo de um site simples usando HTML semântico, exercicios da aula 03 ,conhecimentos sobre html.Aula ministrada pelo professor Lucas Manete na data 22/05/2024,instituição Senac Jessé Freire .</p>
+        <h2></h2>
+        <p></p>
     </main>
     <footer>
         <p>&copy; 2024 Meu Site. AdriangelaTeixeira.</p>
