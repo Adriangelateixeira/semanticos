@@ -2,7 +2,7 @@
 
 require_once "connection.php";
 
-$mome = $_POST['nome'];
+$name= $_POST['nome'];
 
 $email = $_POST['email'];
 
@@ -10,7 +10,7 @@ $mensagem = $_POST["mensagem"];
 
 
 
-$sql = "INSERT INTO usuarios (nome, email, mensagem,) VALUES ('$name', '$email', '$mensagem' )";
+$sql = "INSERT INTO usuarios (nome, email, mensagem) VALUES ('$name', '$email', '$mensagem' )";
 
 if ($mysqli->query($sql) === TRUE) {
 
