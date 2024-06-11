@@ -16,6 +16,7 @@ if (isset($_POST['id']) && isset($_POST['nome']) && isset($_POST['email'])) {
 
     if($mysqli->query($sql) ===TRUE) {
         echo "usuarios ATUALIZADO COM sucesso";
+        header("refresh: 1; url = exibir.php");
     }; 
 
 

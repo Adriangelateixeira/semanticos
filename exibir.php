@@ -18,7 +18,7 @@ $mysqli->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de usuários</title>
-    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="lista.css">
 </head>
 <body>
 <div class="container">
@@ -27,6 +27,7 @@ $mysqli->close();
     <div id="users-list">
         <?php
         if ($result->num_rows > 0) {
+            
             echo "<form action='atualizar_usuarios.php' method='POST'>";
             echo "<table>";
             echo "<tr><th>ID</th><th>Nome</th><th>Email</th><th>Atualizar</th><th>Deletar</th></tr>";
@@ -35,19 +36,24 @@ $mysqli->close();
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $row['nome'] . "</td>";
                 echo "<td>" . $row['email'] . "</td>";
-                echo "<td><input type='checkbox' name='id' value='" . $row['id'] . "'></td>";
-                echo "<td><input type='checkbox' name='deletar[]' value='" . $row['id'] . "'></td>";
+
+                echo "<td><a href='atualizar_usuarios.php?id=" . $row['id'] . "'>Atualizar</a></td>";
+            
+                echo "<td><a href='deletar_usuarios.php?id=" . $row['id'] . "'>Deletar</a></td>";
                 echo "</tr>";
             }
             echo "</table>";
             echo "<input type='submit' value='Atualizar'>";
-            echo "<input type='submit' value='Deletar'>";
             echo "</form>";
+
+            
         } else {
             echo "<p>Nenhum usuário encontrado.</p>";
         }
         ?>
     </div>
 </div>
+
+
 </body>
 </html>

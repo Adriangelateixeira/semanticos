@@ -3,8 +3,8 @@
 require_once "connection.php"; // Este arquivo deve conter as informações de conexão com o banco de dados
 
 
-if(isset($_POST['id'])) {
-    $id  = $_POST['id'];
+if(isset($_GET['id'])) {
+    $id  = $_GET['id'];
     $sql = "SELECT * FROM usuarios WHERE id = $id";
 
     $result = $mysqli->query($sql);
@@ -14,6 +14,8 @@ if(isset($_POST['id'])) {
     $email = $row['email'];
     
 }
+
+
 
 
 
@@ -120,7 +122,7 @@ if(isset($_POST['id'])) {
 <body>
     <h1>Atualizar Usuário</h1>
     <form action="dados.php" method="POST">
-    <input type="text" id="nome" name="id" value= "<?php echo htmlspecialchars($id); ?>"required><br><br>
+    <input type="text" id="nome" name="id" value= "<?php echo htmlspecialchars($id);?>"required><br><br>
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" value= "<?php echo htmlspecialchars($nome); ?>"required><br><br>
         
