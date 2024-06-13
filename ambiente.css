@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo do corpo da página */
+}
+
+#ambiente {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo da área de conteúdo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilizando o cabeçalho */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Estilizando a seção de fotos */
+#ambiente img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilizando a seção de eventos especiais */
+#ambiente .eventos {
+    margin-top: 20px;
+}
+
+/* Estilizando a seção de feedback dos clientes */
+#ambiente .feedback {
+    margin-top: 20px;
+}
+/* Estilizando a seção de feedback dos clientes */
+#ambiente .feedback {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#ambiente .feedback .foto-cliente {
+    width: 100px; /* Largura da foto do cliente */
+    height: 100px; /* Altura da foto do cliente */
+    border-radius: 50%; /* Forma circular */
+    margin-right: 20px; /* Espaço entre a foto e o texto */
+    overflow: hidden; /* Escondendo qualquer parte da foto que ultrapasse o contêiner */
+}
+
+#ambiente .feedback .foto-cliente img {
+    width: 100%; /* Garante que a imagem da foto do cliente ocupe todo o espaço disponível */
+    height: auto;
+}
+
+#ambiente .feedback .texto-feedback {
+    flex: 1; /* Faz o texto ocupar o espaço restante disponível */
+}
+#ambiente .feedback .foto-cliente {
+    width: 100px; /* Largura da foto do cliente */
+    height: 100px; /* Altura da foto do cliente */
+    border-radius: 50%; /* Forma circular */
+    margin-right: 20px; /* Espaço entre a foto e o texto */
+    overflow: hidden; /* Escondendo qualquer parte da foto que ultrapasse o contêiner */
+}
+
+
+
+
+
+/* Estilizando a seção de reservas */
+#ambiente .reservas {
+    margin-top: 20px;
+}
+
+/* Estilizando os links */
+a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Transição suave de cor */
+}
+
+a:hover {
+    color: #0056b3; /* Cor dos links ao passar o mouse */
+}
